@@ -1,0 +1,346 @@
+body {background-color: #ffffff;
+    margin: 0em;
+     color: #ce9a3a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to bottom, #ce9a3a 100%, #716e6b 100%);
+
+    background-attachment: fixed; /* Optional: keeps the gradient in place on scroll */
+}
+
+
+header { 
+    background-color: #d58c1e;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 1em;
+    color: #FFFFFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+    footer {
+        color: rgb(121, 121, 130);
+        text-align: center;
+        padding: 1%;
+        font-style: italic;
+        font-size: .70em;
+    }
+    
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    font-size: 3em;
+}
+
+nav{ 
+     text-align: center;
+     background-color: white;
+    }
+
+h2{ text-align: center;
+    color:#d58c1e;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+dt {color: #002171;
+font-weight: bold;}
+
+
+
+h3{ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #002171;}
+h4{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #002171;
+    text-align: left ;
+}    
+p{
+    text-align: left;
+    color: #002171;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+main{ 
+padding-top: 0em;
+padding-bottom: 0em;
+padding-left: 1em;
+padding-right: 1em;
+padding-left: 2em;
+padding-right: 2em;}
+
+
+#sikhism {
+    height: 500px;                       
+    background-image: url("images/sikhism.jpg");   
+    background-size: 120% 100%;           
+    background-repeat: no-repeat;
+}
+#sikhgurus{
+    height: 500px;
+    background-image: url("images/sikhgurus.jpg");   
+    background-size: 120% 100%;           
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#traditions3{
+    height: 600px;
+    background-image: url("images/traditions3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#arts{
+    height: 500px;
+    background-image: url("images/arts.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#phulkari{
+    height: 500px;
+    background-image: url("images/phulkari.jpg");   
+    background-size: 120% 100%;           
+    background-repeat: no-repeat;
+    background-position: right;}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1em; /* Adds space between the paragraph and the image */
+    margin: 1em 0;
+}
+
+aside p {
+    flex: 1; 
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #002171;
+    font-style: italic;
+    padding-top: 65px;
+}
+
+figure#khanda-right {
+    flex: 0 0 auto; /* Prevents the image from stretching */
+    text-align: center;
+}
+
+figure#khanda-right img {
+    width: 250px;
+    height: 355px;
+    border: 1px solid #CCC;
+    box-shadow: 5px 5px 5px #828282;
+}
+
+figure#khanda-right figcaption {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    #content { display:flex; }   
+    nav      { flex: none; }
+    main     { flex: 6; 
+               min-width: 20em; 
+               background-color: #FFFFFF; }
+    aside    { flex: 6; 
+                background-color: #EAEAEA; }
+    header { padding-left: 10em; }
+    }
+
+
+nav a { 
+     
+    text-decoration: none;}
+
+#wrapper {
+    background-color: #FFFFFF;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+nav a:link {
+    color: #5c7fa3;
+    text-decoration:none;
+}
+
+nav a:visited{
+    color: #0f2f76}
+
+nav a:hover{
+    color:#ffbd59;
+}
+
+nav ul {
+    display:flex;
+    flex-direction: column;
+    margin:0em;
+    padding-left: 0em;
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+nav li{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+
+section {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+#mobile{
+    display: inline;
+}
+
+#desktop{
+    display: none;
+}
+@media (min-width: 600px)
+{
+    h1{
+        font-size: 2em;
+        letter-spacing: .25em;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+    }
+    nav li{
+        width: 12em;
+        border-bottom: none;
+    }
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #flow{
+        display:flex;
+        flex-direction: row;
+    }
+    #mobile{
+        display: none;
+    }
+    #desktop{
+        display:inline;
+    }
+    #homehero{
+        background-size: 100% 100%;
+    }
+    #yurthero{
+        background-size: 100% 100%;
+    }
+    #trailhero{
+        background-size: 100% 100%;
+    }
+
+}
+
+@media (min-width: 1024px)
+{
+    body {
+        background: linear-gradient(to bottom, #ce9a3a, #716e6b 100%);
+    }
+    nav ul {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #wrapper{
+        margin: auto;
+        width: 80%;
+    }
+}
+
+table{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    border: 1px solid #002171;
+    width: 90%;
+    border-collapse: collapse;
+    padding-bottom: 1em;
+}
+
+th,td {
+    padding: 5px;
+    border: 2px solid #002171;
+}
+tbody{
+    color: #716e6b;
+}
+
+td{
+    text-align: center;
+
+}
+
+.text{
+    text-align: left;
+}
+tr:nth-of-type(even) { background-color: #e3b46d; }
+
+#panjk {float: right;
+    margin: 0 0 5px 5px; 
+    border: 1px solid #000000;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #828282 ;
+}
+#vaisakhi{
+    float: right;
+    margin:0 0 5px 5px;
+    border: 1px solid #000000;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #828282;
+}
+#langar{
+    float: right;
+    margin: 0 0 5px 5px;
+    border: 1px solid #000000;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #828282;
+}
+#architecture2{float: right;
+    margin: 0 0 5px 5px; 
+    border: 1px solid #000000;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #828282 ;
+}
+#turban1{float: right;
+    margin: 0 0 5px 5px; 
+    border: 1px solid #000000;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #828282 ;
+}
+#women1{float: right;
+    margin: 0 0 5px 5px; 
+    border: 1px solid #000000;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #828282 ;
+}
+form { display: flex;
+    flex-direction: column;
+    padding-left: 1em; width: 80%; }
+    @media(min-width: 769px)
+    {
+       form{
+           display: grid;
+           gap: 1em;
+           width: 60%;
+           grid-template-columns: 10em 1fr;
+           
+       }
+    }    
